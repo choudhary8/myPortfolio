@@ -1,227 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-    rel="stylesheet">
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <style>
-        h1{
-            font-weight:700;
-            font-size:x-large;
-        }
-        li{
-        }
+      h1 {
+        font-weight: 700;
+        font-size: x-large;
+      }
+      li {
+      }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <nav class="fixed right-0 w-1/10 h-screen h-full flex flex-col justify-center">
-        <ul class="fixed right-0 h-1/2 flex flex-col justify-around my-auto py-auto">
-            <li class="rounded-full bg-green-500">
-                <a class="inline m-4" href="#">
-                    <!-- <span>Home</span> -->
-                    <i class="fa fa-home"></i>
-                </a>
-            </li>
-            <li>
-                <a class="inline m-4" href="#">
-                    <i class="fa fa-user"></i>
-                    <!-- Experience -->
-                </a>
-            </li>
-            <li>
-                <a class="inline m-4" href="#">
-                    <i class="fa fa-briefcase"></i>
-                    <!-- Projects -->
-                </a>
-            </li>
-            <li>
-                <a class="inline m-4" href="#">
-                    <i class="fa fa-code"></i>
-                    <!-- Skills -->
-                </a>
-            </li>
-            <li>
-                <a class="inline m-4" href="#">
-                    <i class="fa fa-envelope"></i>
-                    <!-- Contact me -->
-                </a>
-            </li>
-        </ul>        
+    <link rel="stylesheet" href="../src/assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="fixed right-0 w-1/10 h-screen h-full flex flex-col justify-center"
+    >
+      <ul
+        class="fixed right-0 h-1/2 flex flex-col justify-around my-auto py-auto"
+      >
+        <li class="rounded-full bg-green-500">
+          <a class="inline m-4" href="#">
+            <!-- <span>Home</span> -->
+            <i class="fa fa-home"></i>
+          </a>
+        </li>
+        <li>
+          <a class="inline m-4" href="#">
+            <i class="fa fa-user"></i>
+            <!-- Experience -->
+          </a>
+        </li>
+        <li>
+          <a class="inline m-4" href="#">
+            <i class="fa fa-briefcase"></i>
+            <!-- Projects -->
+          </a>
+        </li>
+        <li>
+          <a class="inline m-4" href="#">
+            <i class="fa fa-code"></i>
+            <!-- Skills -->
+          </a>
+        </li>
+        <li>
+          <a class="inline m-4" href="#">
+            <i class="fa fa-envelope"></i>
+            <!-- Contact me -->
+          </a>
+        </li>
+      </ul>
     </nav>
 
-
-    <div class="flex">
-        <div class="w-1/3 fixed h-full p-10 pr-0">
-            <img src="../src/assets/photo.jpg" alt="" class="w-full">
-            <div class="m-2 w-full flex justify-center">Manoj Kumar</div>
-            <div class="m-2 w-full flex justify-center">Programmer</div>            
-            <!-- <div class="mb-4" style="height: 22px;">
+    <div class="flex my-4">
+      <div class="w-1/3 fixed h-full p-10 pr-0">
+        <img src="../src/assets/photo.jpg" alt="" class="w-full" />
+        <div class="m-2 w-full flex justify-center font-bold">Manoj Kumar</div>
+        <div class="m-2 w-full flex justify-center">Programmer</div>
+        <!-- <div class="mb-4" style="height: 22px;">
                 <h4 class="typed-text-output d-inline-block text-body">Front</h4><span class="typed-cursor">|</span>
                 <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
             </div> -->
-            <div class="m-2 w-full flex justify-center">
-                <a href="" class="mx-1">Download CV</a>
-                <span>|</span>
-                <a href="" class="mx-1">Contact Me</a>
+        <div class="m-2 w-full flex justify-center">
+          <a href="" class="mx-1">Download CV</a>
+          <span>|</span>
+          <a href="" class="mx-1">Contact Me</a>
+        </div>
+      </div>
+
+      <div
+        id="content"
+        class="fixed right-0 w-2/3 p-10 overflow-y-scroll h-screen"
+      >
+        <div id="aboutMe">
+          <h1>About Me</h1>
+          <hr class="w-16 h-0.5 bg-black" />
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet
+            voluptatibus soluta nisi sequi eos, repellendus recusandae ipsum
+            doloremque quidem repudiandae dolore omnis consectetur officia porro
+            dicta nemo autem asperiores!
+          </div>
+          <div class="grid grid-cols-2">
+            <div>
+              <span class="font-bold">Name: </span>
+              <span>Manoj Kumar</span>
             </div>
+            <div>
+              <span class="font-bold">Degree:</span>
+              <span>B.Tech</span>
+            </div>
+            <div>
+              <span class="font-bold">Phone:</span>
+              <span>9602964298</span>
+            </div>
+            <div>
+              <span class="font-bold">Email:</span>
+              <span>manojbhichchhar8@gmail.com</span>
+            </div>
+          </div>
         </div>
 
-
-        <div id="content" class="fixed right-0 w-2/3 p-10 overflow-y-scroll h-screen">
-            <div id="aboutMe">
-                <h1>About Me</h1>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet voluptatibus soluta nisi sequi eos, repellendus recusandae ipsum doloremque quidem repudiandae dolore omnis consectetur officia porro dicta nemo autem asperiores!</div>
-            
+        <div id="skills">
+          <h1>Skills</h1>
+          <hr class="w-16 h-0.5 bg-black" />
+          <div class="grid grid-cols-2 justify-between space-x-4 space-y-1">
+            <div>
+              <div class="skill">
+                <span>C++</span>
+                <span>95%</span>
+              </div>
+              <div class="h-1.5 bg-gray-200">
+                <div class="w-1/2 bg-black h-1.5"></div>
+              </div>
             </div>
-
-            <div id="skills">
-                <h1>Skills</h1>
-                <div>
-                    <div>C++</div>
-                    <div></div>
-                    <div>HTML</div>
-                    <div></div>
-                    <div>CSS</div>
-                    <div></div>
-                    <div>JavaScript</div>
-                    <div></div>
-                    <div>React Js</div>
-                    <div></div>
-                    <div>Node Js</div>
-                    <div></div>
-                    <div>Express</div>
-                    <div></div>
-                    <div>MongoDB</div>
-                    <div></div>
-                    <div></div>
-                </div>
+            <div>
+              <div class="skill">
+                <span>HTML</span>
+                <span></span>
+              </div>
+              <div class="border border-black h-1">
+                <div class="w-1/2 bg-black h-1"></div>
+              </div>
             </div>
-
-            <div id="experience">
-                <h1>Experience</h1>
-                <div>
-                    <div>ICICI Bank</div>
-                    <div>Digital Technology Manager</div>
-                    <div>September 2022 - Present</div>
-                    ● Managed and coordinated a 3rd party
-                    Development team, ensuring timely delivery of
-                    high-quality solutions as part of the Application
-                    Management Team at ICICI Bank.
-                    ● Acted as the primary point of contact between
-                    ICICI Bank and the Development team, facilitating
-                    effective communication.
-                    ● Provided guidance, support, and ensured
-                    adherence to timelines and best practices.
-                    ● Collaborated with cross-functional teams to
-                    gather and translate business requirements
-                    effectively.
-                    ● Monitored project progress, resolved challenges,
-                    and stayed updated with industry trends to drive
-                    continuous improvement and innovation.
-                </div>
-                <div>
-                    <div>Fynd (Shopsense Retail Technologies Pvt. Ltd.)</div>
-                    <div>Full Stack Developer Trainee</div>
-                    <div>August 2021 - October 2021</div>
-                    ● Developed visually appealing and interactive
-                    front-end components using HTML, CSS,
-                    JavaScript, Vue.js, and Vuex framework.
-                    ● Implemented responsive and user-friendly
-                    interfaces, enhancing the overall user experience.
-                    ● Utilized Node.js and Express framework for
-                    efficient back-end development, ensuring
-                    seamless data storage and retrieval with
-                    MongoDB.
-                    ● Conducted rigorous testing and debugging,
-                    ensuring high functionality and optimal
-                    performance of applications.
-                    ● Effectively used git to maintain my work.
-                    ● Actively engaged in continuous learning, staying
-                    updated with the latest technologies and
-                    frameworks to enhance skills as a Full Stack
-                    Developer.
-                </div>
-                <div>
-                    <div>Sabajivala</div>
-                    <div>Co-Founder</div>
-                    <div>May 2021 - June 2021</div>
-                    ● Co-founded and launched Sabajivala, an online
-                    platform for direct ordering of fresh produce from
-                    farms.
-                    ● Implemented a mobile app and also utilized
-                    WhatsApp and phone calls to facilitate customer
-                    orders.
-                    ● Established strong relationships with local
-                    farmers to ensure a consistent supply of fresh
-                    fruits and vegetables.
-                    ● Efficiently managed logistics using electric
-                    three-wheelers for timely and eco-friendly
-                    deliveries.
-                    ● Conducted market research to optimize product
-                    offerings and gained valuable experience in
-                    entrepreneurship, customer service, and supply
-                    chain management within a start-up
-                    environment.
-                </div>
+            <div>
+              <div class="skill">
+                <span>CSS</span>
+                <span>80%</span>
+              </div>
+              <div class="border border-black h-1">
+                <div class="w-1/2 bg-black h-1"></div>
+              </div>
             </div>
-
-            <div id="education">
-                <h1>Education</h1>
-                <div>
-                    <div>Indian Institute of Technology (ISM), Dhanbad</div>
-                    <div>Bachelor of Technology in Computer Science and Engineering</div>
-                    <div>JULY 2017 - MAY 2021</div>
-                </div>
-                <div>
-                    <div>Adarsh Public Senior Secondary School, Sikar, Rajasthan</div>
-                    <div>10th - APRIL 2013 - APRIL 2014 - 85.33%</div>
-                    <div>12th - APRIL 2015 - APRIL 2016 - 90%</div>
-                </div>
+            <div>
+              <div class="skill">
+                <span>JavaScript</span>
+                <span></span>
+              </div>
+              <div class="border border-black h-1">
+                <div class="w-1/2 bg-black h-1"></div>
+              </div>
             </div>
-
-            <div id="projects">
-                <h1>Projects</h1>
-                <div>
-                    Parkings
-                    ● Developed "Parkings" web application for searching
-                    and uploading parking spaces using HTML, CSS,
-                    JavaScript, Vue.js, Express.js, and MongoDB.
-                    ● Implemented Key Features Including Search
-                    functionality, user authentication, and
-                    authorization.
-                    ● Worked in an Agile development environment,
-                    conducting testing, debugging, and
-                    troubleshooting for optimal performance.
-                </div>
-                <div>
-                    Clock
-                    ● Created and hosted a dynamic analog clock project
-                    on GitHub, demonstrating proficiency in HTML,
-                    CSS, and JavaScript while showcasing the ability to
-                    develop interactive and real-time web applications.
-                    ● https://clock-b9j0.onrender.com
-                </div>
-                <div>
-                    Shopping
-                    ● Developed a "Shopping" web application for
-                    displaying items for shopping, using HTML, CSS,
-                    and implementing a user-friendly interface.
-                    ● Conducted thorough testing, debugging, and
-                    utilized github to ensure seamless functionality,
-                    showcasing problem-solving skills and attention to
-                    detail.
-                    ● choudhary8.github.io
-                </div>
+            <div>
+              <div class="skill">
+                <span>React Js</span>
+                <span></span>
+              </div>
+              <div class="border border-black h-1">
+                <div class="w-1/2 bg-black h-1"></div>
+              </div>
             </div>
-
-            <div id="contactMe">
-                <h1>Contact Me</h1>
+            <div>
+              <div class="skill">
+                <span>Node Js</span>
+                <span></span>
+              </div>
+              <div class="border border-black h-1">
+                <div class="w-1/2 bg-black h-1"></div>
+              </div>
             </div>
-
+            <div>
+              <div class="skill">
+                <span>Express</span>
+                <span></span>
+              </div>
+              <div class="border border-black h-1">
+                <div class="w-1/2 bg-black h-1"></div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div id="experience">
+          <h1>Experience</h1>
+          <hr class="w-16 h-0.5 bg-black" />
+          <div class="m-2 border-l border-black">
+            <div class="flex my-4">
+              <i class="fa fa-arrow-right m-2 ml-0"></i>
+              <div>
+                <div class="font-bold">ICICI Bank</div>
+                <div>Digital Technology Manager</div>
+                <div>September 2022 - Present</div>
+                ● Managed and coordinated a 3rd party Development team, ensuring
+                timely delivery of high-quality solutions as part of the
+                Application Management Team at ICICI Bank. ● Acted as the
+                primary point of contact between ICICI Bank and the Development
+                team, facilitating effective communication. ● Provided guidance,
+                support, and ensured adherence to timelines and best practices.
+                ● Collaborated with cross-functional teams to gather and
+                translate business requirements effectively. ● Monitored project
+                progress, resolved challenges, and stayed updated with industry
+                trends to drive continuous improvement and innovation.
+              </div>
+            </div>
+            <div class="flex my-4">
+              <i class="fa fa-arrow-right m-2 ml-0"></i>
+              <div>
+                <div class="font-bold">
+                  Fynd (Shopsense Retail Technologies Pvt. Ltd.)
+                </div>
+                <div>Full Stack Developer Trainee</div>
+                <div>August 2021 - October 2021</div>
+                ● Developed visually appealing and interactive front-end
+                components using HTML, CSS, JavaScript, Vue.js, and Vuex
+                framework. ● Implemented responsive and user-friendly
+                interfaces, enhancing the overall user experience. ● Utilized
+                Node.js and Express framework for efficient back-end
+                development, ensuring seamless data storage and retrieval with
+                MongoDB. ● Conducted rigorous testing and debugging, ensuring
+                high functionality and optimal performance of applications. ●
+                Effectively used git to maintain my work. ● Actively engaged in
+                continuous learning, staying updated with the latest
+                technologies and frameworks to enhance skills as a Full Stack
+                Developer.
+              </div>
+            </div>
+            <div class="flex my-4">
+              <i class="fa fa-arrow-right m-2 ml-0"></i>
+              <div>
+                <div class="font-bold">Sabajivala</div>
+                <div>Co-Founder</div>
+                <div>May 2021 - June 2021</div>
+                ● Co-founded and launched Sabajivala, an online platform for
+                direct ordering of fresh produce from farms. ● Implemented a
+                mobile app and also utilized WhatsApp and phone calls to
+                facilitate customer orders. ● Established strong relationships
+                with local farmers to ensure a consistent supply of fresh fruits
+                and vegetables. ● Efficiently managed logistics using electric
+                three-wheelers for timely and eco-friendly deliveries. ●
+                Conducted market research to optimize product offerings and
+                gained valuable experience in entrepreneurship, customer
+                service, and supply chain management within a start-up
+                environment.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="education">
+          <h1>Education</h1>
+          <hr class="w-16 h-0.5 bg-black" />
+          <div class="m-2 border-l border-black">
+            <div class="flex my-4">
+              <i class="fa fa-arrow-right m-2 ml-0"></i>
+              <div>
+                <div>Indian Institute of Technology (ISM), Dhanbad</div>
+                <div>
+                  Bachelor of Technology in Computer Science and Engineering
+                </div>
+                <div>JULY 2017 - MAY 2021</div>
+              </div>
+            </div>
+            <div class="flex my-4">
+              <i class="fa fa-arrow-right m-2 ml-0"></i>
+              <div>
+                <div>
+                  Adarsh Public Senior Secondary School, Sikar, Rajasthan
+                </div>
+                <div>10th - APRIL 2013 - APRIL 2014 - 85.33%</div>
+                <div>12th - APRIL 2015 - APRIL 2016 - 90%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="projects">
+          <h1>Projects</h1>
+          <hr class="w-16 h-0.5 bg-black" />
+          <div class="m-2 border-l border-black">
+            <div class="flex my-4">
+              <i class="fa fa-arrow-right m-2 ml-0"></i>
+              <div>
+                <div class="font-bold">Parkings</div>
+
+                ● Developed "Parkings" web application for searching and
+                uploading parking spaces using HTML, CSS, JavaScript, Vue.js,
+                Express.js, and MongoDB. ● Implemented Key Features Including
+                Search functionality, user authentication, and authorization. ●
+                Worked in an Agile development environment, conducting testing,
+                debugging, and troubleshooting for optimal performance.
+              </div>
+            </div>
+            <div class="flex my-4">
+              <i class="fa fa-arrow-right m-2 ml-0"></i>
+              <div>
+                <div class="font-bold">Clock</div>
+                ● Created and hosted a dynamic analog clock project on GitHub,
+                demonstrating proficiency in HTML, CSS, and JavaScript while
+                showcasing the ability to develop interactive and real-time web
+                applications. ● https://clock-b9j0.onrender.com
+              </div>
+            </div>
+            <div class="flex my-4">
+              <i class="fa fa-arrow-right m-2 ml-0"></i>
+              <div>
+                <div class="font-bold">Shopping</div>
+
+                ● Developed a "Shopping" web application for displaying items
+                for shopping, using HTML, CSS, and implementing a user-friendly
+                interface. ● Conducted thorough testing, debugging, and utilized
+                github to ensure seamless functionality, showcasing
+                problem-solving skills and attention to detail. ●
+                choudhary8.github.io
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contactMe">
+          <h1>Contact Me</h1>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
