@@ -22,7 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body class="bg-gray-100">
     <nav
       class="fixed right-0 w-1/10 h-screen h-full flex flex-col justify-center"
     >
@@ -63,8 +63,8 @@
     </nav>
 
     <div class="flex my-4">
-      <div class="w-1/3 fixed h-full p-10 pr-0">
-        <img src="../src/assets/photo.jpg" alt="" class="w-full" />
+      <div class="w-1/3 fixed h-full p-10 pr-0 bg-white rounded-lg">
+        <img src="../src/assets/photo.jpg" alt="" class="w-full h-5/6 rounded-lg" />
         <div class="m-2 w-full flex justify-center font-bold">Manoj Kumar</div>
         <div class="m-2 w-full flex justify-center">Programmer</div>
         <!-- <div class="mb-4" style="height: 22px;">
@@ -80,7 +80,7 @@
 
       <div
         id="content"
-        class="fixed right-0 w-2/3 p-10 overflow-y-scroll h-screen"
+        class="fixed right-0 w-2/3 p-10 overflow-y-scroll h-screen bg-white rounded-lg"
       >
         <div id="aboutMe">
           <h1>About Me</h1>
@@ -111,11 +111,11 @@
           </div>
         </div>
 
-        <div id="skills">
+        <div id="skills" class="my-16">
           <h1>Skills</h1>
           <hr class="w-16 h-0.5 bg-black" />
-          <div class="grid grid-cols-2 justify-between space-x-4 space-y-1">
-            <div>
+          <div class="flex flex-wrap justify-between"> 
+            <div class="w-1/2 p-4 pl-0">
               <div class="skill">
                 <span>C++</span>
                 <span>95%</span>
@@ -124,64 +124,64 @@
                 <div class="w-1/2 bg-black h-1.5"></div>
               </div>
             </div>
-            <div>
+            <div class="w-1/2 p-4 pl-0">
               <div class="skill">
                 <span>HTML</span>
                 <span></span>
               </div>
-              <div class="border border-black h-1">
-                <div class="w-1/2 bg-black h-1"></div>
+              <div class="h-1.5 bg-gray-200">
+                <div class="w-1/2 bg-black h-1.5"></div>
               </div>
             </div>
-            <div>
+            <div class="w-1/2 p-4 pl-0">
               <div class="skill">
                 <span>CSS</span>
                 <span>80%</span>
               </div>
-              <div class="border border-black h-1">
-                <div class="w-1/2 bg-black h-1"></div>
+              <div class="h-1.5 bg-gray-200">
+                <div class="w-1/2 bg-black h-1.5"></div>
               </div>
             </div>
-            <div>
+            <div class="w-1/2 p-4 pl-0">
               <div class="skill">
                 <span>JavaScript</span>
                 <span></span>
               </div>
-              <div class="border border-black h-1">
-                <div class="w-1/2 bg-black h-1"></div>
+              <div class="h-1.5 bg-gray-200">
+                <div class="w-1/2 bg-black h-1.5"></div>
               </div>
             </div>
-            <div>
+            <div class="w-1/2 p-4 pl-0">
               <div class="skill">
                 <span>React Js</span>
                 <span></span>
               </div>
-              <div class="border border-black h-1">
-                <div class="w-1/2 bg-black h-1"></div>
+              <div class="h-1.5 bg-gray-200">
+                <div class="w-1/2 bg-black h-1.5"></div>
               </div>
             </div>
-            <div>
+            <div class="w-1/2 p-4 pl-0">
               <div class="skill">
                 <span>Node Js</span>
                 <span></span>
               </div>
-              <div class="border border-black h-1">
-                <div class="w-1/2 bg-black h-1"></div>
+              <div class="h-1.5 bg-gray-200">
+                <div class="w-1/2 bg-black h-1.5"></div>
               </div>
             </div>
-            <div>
+            <div class="w-1/2 p-4 pl-0">
               <div class="skill">
                 <span>Express</span>
                 <span></span>
               </div>
-              <div class="border border-black h-1">
-                <div class="w-1/2 bg-black h-1"></div>
+              <div class="h-1.5 bg-gray-200">
+                <div class="w-1/2 bg-black h-1.5"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div id="experience">
+        <div id="experience" class="my-16">
           <h1>Experience</h1>
           <hr class="w-16 h-0.5 bg-black" />
           <div class="m-2 border-l border-black">
@@ -247,7 +247,7 @@
           </div>
         </div>
 
-        <div id="education">
+        <div id="education" class="my-16">
           <h1>Education</h1>
           <hr class="w-16 h-0.5 bg-black" />
           <div class="m-2 border-l border-black">
@@ -274,7 +274,7 @@
           </div>
         </div>
 
-        <div id="projects">
+        <div id="projects" class="my-16">
           <h1>Projects</h1>
           <hr class="w-16 h-0.5 bg-black" />
           <div class="m-2 border-l border-black">
@@ -298,7 +298,9 @@
                 ● Created and hosted a dynamic analog clock project on GitHub,
                 demonstrating proficiency in HTML, CSS, and JavaScript while
                 showcasing the ability to develop interactive and real-time web
-                applications. ● https://clock-b9j0.onrender.com
+                applications. 
+                ●<a href="https://clock-b9j0.onrender.com" class="text-rose-500">https://clock-b9j0.onrender.com</a> 
+
               </div>
             </div>
             <div class="flex my-4">
