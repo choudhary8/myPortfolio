@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manoj Kumar</title>
+    <link rel="stylesheet" href="../src/assets/css/index.css">
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
@@ -16,7 +17,6 @@
       li {
       }
     </style>
-    <link rel="stylesheet" href="../src/assets/css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -319,8 +319,16 @@
           </div>
         </div>
 
-        <div id="contactMe">
-          <h1>Contact Me</h1>
+        <div id="contact">
+          <h1>Get in touch</h1>
+          <hr class="w-16 h-0.5 bg-black" />
+          <form action="https://api.web3forms.com/submit" method="POST" class="flex-wrap">
+            <input type="hidden" name="access_key" value="5cbc25f6-aabf-411b-8642-c0d5f8796db4">
+            <input type="text" name="name" placeholder="Your Name" required class="border rounded-sm p-1">
+            <input type="text" name="email" placeholder="Your Email" required class="border">
+            <textarea name="message" placeholder="Your Message" required class="border"></textarea>
+            <button type="submit" class="border">Sumbit</button>
+          </form>
         </div>
       </div>
     </div>
